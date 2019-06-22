@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/bj_20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/bj_20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bj_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/patient_dny_item_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/patient_dny_ll_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/bj_20dp"
+                    android:background="@drawable/lerf_icon" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/bj_5dp"
+                    android:layout_marginRight="@dimen/bj_5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bj_10dp"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="病人动态"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" 入院" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05,06,06" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="今日出院" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="明日出院" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05," />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="@dimen/wz_20sp"
+                        android:text="今日手术" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05," />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="明日手术" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05," />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="病危" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05," />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="病重" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05," />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bj_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/patient_dny_item_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/patient_dny_ll_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/bj_20dp"
+                    android:background="@drawable/lerf_icon" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/bj_5dp"
+                    android:layout_marginRight="@dimen/bj_5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bj_10dp"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="特殊检查治疗"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=" 转入" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05,06,06" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="转出" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="接触隔离" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05," />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="欠费" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05," />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="出入量" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05," />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="尿量" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05," />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="管道" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="01,02,03,05," />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bj_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/patient_dny_item_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/patient_dny_ll_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/bj_20dp"
+                    android:background="@drawable/work_icon" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/bj_5dp"
+                    android:layout_marginRight="@dimen/bj_5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bj_10dp"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="工作安排"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="责任组" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="A1" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="A2" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="责任护士" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="文丽*" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="文丽*" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="责任护士" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="许威/李航" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="许威/李航" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="二线" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="丽丽" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="莉莉" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="责任医生" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="许威/李航" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="许威/李航" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="责任组" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="文奥威" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="文奥威" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bj_2dp"
+                    android:background="#313DA1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="责任护士" />
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="刘轿" />
+
+
+                    <View
+                        android:layout_width="@dimen/bj_2dp"
+                        android:layout_height="match_parent"
+                        android:background="#313DA1" />
+
+                    <TextView
+                        style="@style/patient_text"
+                        android:layout_width="@dimen/bj_130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/bj_10dp"
+                        android:gravity="center"
+                        android:text="刘轿" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bj_20dp"
+            android:layout_weight="1"
+            android:background="@drawable/patient_dny_item_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/patient_dny_ll_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/bj_20dp"
+                    android:background="@drawable/notice_icon" />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/bj_5dp"
+                    android:layout_marginRight="@dimen/bj_5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bj_10dp"
+                    android:ems="1"
+                    android:gravity="center"
+                    android:text="通知"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/patient_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="普通病人组交接" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bj_2dp"
+                android:background="#313DA1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/patient_text"
+                    android:layout_width="@dimen/bj_130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="责任医生" />
+
+                <View
+                    android:layout_width="@dimen/bj_2dp"
+                    android:layout_height="match_parent"
+                    android:background="#313DA1" />
+
+                <TextView
+                    style="@style/patient_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/bj_10dp"
+                    android:gravity="center"
+                    android:text="01,02,03,05," />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bj_2dp"
+                android:background="#313DA1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/patient_text"
+                    android:layout_width="@dimen/bj_130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="责任组" />
+
+                <View
+                    android:layout_width="@dimen/bj_2dp"
+                    android:layout_height="match_parent"
+                    android:background="#313DA1" />
+
+                <TextView
+                    style="@style/patient_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/bj_10dp"
+                    android:gravity="center"
+                    android:text="01,02,03,05," />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bj_2dp"
+                android:background="#313DA1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/patient_text"
+                    android:layout_width="@dimen/bj_130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="责任护士" />
+
+                <View
+                    android:layout_width="@dimen/bj_2dp"
+                    android:layout_height="match_parent"
+                    android:background="#313DA1" />
+
+                <TextView
+                    style="@style/patient_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/bj_10dp"
+                    android:gravity="center"
+                    android:text="01,02,03,05," />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

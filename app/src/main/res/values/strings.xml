@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">护理看板系统</string>
+
+    <string name="default_server_url">192.168.0.115</string>
+    <string name="server_port">8040</string>
+
+    <!--<string name="default_server_url">202.75.222.141</string>-->
+    <!--<string name="server_port">1001</string>-->
+
+    <string name="socket_port">8888</string>
+    <string name="socket_ip">192.168.0.115</string>
+    <string name="queue_name">mail.test</string>
+    <string name="look_ip">192.168.57.140</string>
+    <string name="rabbit_ip">172.30.1.246</string>
+    <string name="rabbit_port">5672</string>
+    <string name="device_name">xxx病人</string>
+
+    <string name="system">系统</string>
+    <string name="admission_number">住院号</string>
+    <string name="Loading">正在加载中...</string>
+    <string name="stop_rolling">停止滚动</string>
+    <string name="start_rolling">开始滚动</string>
+    <string name="deptCode">deptCode</string>
+    <string name="main_doctor">主治医生</string>
+
+</resources>

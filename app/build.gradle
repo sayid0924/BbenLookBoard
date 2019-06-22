@@ -1,0 +1,93 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.bben.lookboard"
+        minSdkVersion 21
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    signingConfigs {
+        release {
+            keyAlias 'bben'
+            keyPassword '111111'
+            storeFile file('../m10_signature/m10_platform.jks')
+            storePassword '111111'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.bben.lookboard.db.database'
+        targetGenDir 'src/main/java'
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res', 'src/main/res-night', 'src/main/res-red', 'src/main/res-green', 'src/main/res-violet']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'org.glassfish:javax.annotation:10.0-b28'
+    implementation 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    implementation 'io.reactivex:rxjava:1.1.0'
+    implementation 'io.reactivex:rxandroid:1.1.0'
+//    implementation "io.reactivex.rxjava2:rxjava:2.1.16"
+//    implementation "io.reactivex.rxjava2:rxandroid:2.0.2"
+
+
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    implementation 'com.blankj:utilcode:1.3.6'
+    implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30"
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.orhanobut:logger:1.15'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'org.greenrobot:greendao-generator:3.2.2'
+    implementation 'org.greenrobot:greendao:3.2.2'
+    implementation 'com.jaeger.statusbaruitl:library:1.3.5'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.1'
+    implementation 'com.yanzhenjie:recyclerview-swipe:1.1.4'
+    implementation 'com.github.yhaolpz:FloatWindow:1.0.9'
+    implementation files('libs/netty-all-4.1.30.Final.jar')
+    implementation files('libs/star_rtc_sdk.jar')
+
+    implementation 'skin.support:skin-support:3.1.1'
+    // skin-support 基础控件支持
+    implementation 'skin.support:skin-support-design:3.1.1'
+    // skin-support-design material design 控件支持[可选]
+    implementation 'skin.support:skin-support-cardview:3.1.1'
+    // skin-support-cardview CardView 控件支持[可选]
+    implementation 'skin.support:skin-support-constraint-layout:3.1.1'
+    // skin-support-constraint-layout ConstraintLayout 控件支持[可选]
+
+
+}

@@ -1,0 +1,6 @@
+include ':app'
+//include ':android-support:skin-support'
+//include ':android-support:skin-support-appcompat'
+//include ':android-support:skin-support-design'
+//include ':android-support:skin-support-cardview'
+//include ':android-support:skin-support-constraint-layout'

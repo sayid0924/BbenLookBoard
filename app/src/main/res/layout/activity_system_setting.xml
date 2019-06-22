@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar_root_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_45dp"
+            android:layout_marginTop="@dimen/bj_10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/bj_80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="用户名"
+                android:textSize="@dimen/wz_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:text="李梦雪"
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_45dp"
+            android:layout_marginTop="@dimen/bj_10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/bj_80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="用户编号"
+                android:textSize="@dimen/wz_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:text="000303"
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_45dp"
+            android:layout_marginTop="@dimen/bj_10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_lsit"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/bj_80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="病人列表"
+                android:textSize="@dimen/wz_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_lsit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:text="全病区"
+                android:textSize="@dimen/wz_16sp" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/bj_20dp"
+                android:background="@drawable/ic_move"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_check_dept"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_45dp"
+            android:layout_marginTop="@dimen/bj_10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_check"
+                android:layout_width="@dimen/bj_80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:text="切换病区"
+                android:textSize="@dimen/wz_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_toRightOf="@+id/tv_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:text="外科"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/wz_16sp" />
+
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/bj_20dp"
+                android:background="@drawable/ic_move"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
